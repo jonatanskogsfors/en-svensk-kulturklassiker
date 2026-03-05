@@ -1,0 +1,198 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Anmäl dig"
+  description="Anmäl din genomförda kulturklassiker och beställ ditt diplom."
+>
+
+  <div class="page-header">
+    <div class="container">
+      <p class="section-label">Anmälan</p>
+      <h1>Anmäl din kulturklassiker</h1>
+      <p>
+        Fyll i formuläret nedan och beskriv kort vad du har upplevt i varje kategori.
+        Vi återkommer med information om ditt diplom.
+      </p>
+    </div>
+  </div>
+
+  <div class="form-section">
+    <!--
+      För att aktivera formuläret: lägg till action="https://formspree.io/f/DIN_KOD" method="POST"
+      på form-elementet nedan. Se formspree.io för instruktioner.
+    -->
+    <form
+      id="anmalan-form"
+      novalidate
+    >
+
+      <!-- Personuppgifter -->
+      <h2 class="form-section-title">Dina uppgifter</h2>
+      <p class="form-section-sub">Ange din postadress dit vi skickar diplomet.</p>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="fornamn">Förnamn</label>
+          <input type="text" id="fornamn" name="fornamn" autocomplete="given-name" required />
+        </div>
+        <div class="form-group">
+          <label for="efternamn">Efternamn</label>
+          <input type="text" id="efternamn" name="efternamn" autocomplete="family-name" required />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="epost">E-postadress</label>
+        <input type="email" id="epost" name="epost" autocomplete="email" required />
+      </div>
+
+      <div class="form-group">
+        <label for="gatuadress">Gatuadress</label>
+        <input type="text" id="gatuadress" name="gatuadress" autocomplete="street-address" required />
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="postnummer">Postnummer</label>
+          <input type="text" id="postnummer" name="postnummer" autocomplete="postal-code" inputmode="numeric" required />
+        </div>
+        <div class="form-group">
+          <label for="ort">Ort</label>
+          <input type="text" id="ort" name="ort" autocomplete="address-level2" required />
+        </div>
+      </div>
+
+      <hr class="form-divider" />
+
+      <!-- Upplevelser per kategori -->
+      <h2 class="form-section-title">Dina fem upplevelser</h2>
+      <p class="form-section-sub">
+        Fyll i datum, plats och vad du upplevde för varje kategori.
+      </p>
+
+      <!-- 01 Scenkonst -->
+      <fieldset class="cat-fieldset">
+        <legend class="category-label">
+          <span class="cat-num">01</span>
+          Scenkonst
+        </legend>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="scenkonst-datum">Datum</label>
+            <input type="date" id="scenkonst-datum" name="scenkonst_datum" required />
+          </div>
+          <div class="form-group">
+            <label for="scenkonst-plats">Plats / Scen</label>
+            <input type="text" id="scenkonst-plats" name="scenkonst_plats" placeholder="T.ex. Kungliga Operan, Stockholm" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="scenkonst-upplevelse">Vad såg du?</label>
+          <input type="text" id="scenkonst-upplevelse" name="scenkonst_upplevelse" placeholder="T.ex. Rigoletto" required />
+        </div>
+      </fieldset>
+
+      <!-- 02 Musik -->
+      <fieldset class="cat-fieldset">
+        <legend class="category-label">
+          <span class="cat-num">02</span>
+          Musik
+        </legend>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="musik-datum">Datum</label>
+            <input type="date" id="musik-datum" name="musik_datum" required />
+          </div>
+          <div class="form-group">
+            <label for="musik-plats">Plats / Konserthus</label>
+            <input type="text" id="musik-plats" name="musik_plats" placeholder="T.ex. Göteborgs Konserthus" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="musik-upplevelse">Vad hörde du?</label>
+          <input type="text" id="musik-upplevelse" name="musik_upplevelse" placeholder="T.ex. Göteborgs Symfoniker – Beethovens 9:a" required />
+        </div>
+      </fieldset>
+
+      <!-- 03 Museum -->
+      <fieldset class="cat-fieldset">
+        <legend class="category-label">
+          <span class="cat-num">03</span>
+          Museum
+        </legend>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="museum-datum">Datum</label>
+            <input type="date" id="museum-datum" name="museum_datum" required />
+          </div>
+          <div class="form-group">
+            <label for="museum-plats">Ort</label>
+            <input type="text" id="museum-plats" name="museum_plats" placeholder="T.ex. Stockholm" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="museum-upplevelse">Vilket museum?</label>
+          <input type="text" id="museum-upplevelse" name="museum_upplevelse" placeholder="T.ex. Nationalmuseum" required />
+        </div>
+      </fieldset>
+
+      <!-- 04 Film -->
+      <fieldset class="cat-fieldset">
+        <legend class="category-label">
+          <span class="cat-num">04</span>
+          Film
+        </legend>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="film-datum">Datum</label>
+            <input type="date" id="film-datum" name="film_datum" required />
+          </div>
+          <div class="form-group">
+            <label for="film-plats">Biograf</label>
+            <input type="text" id="film-plats" name="film_plats" placeholder="T.ex. Biografen Capitol, Malmö" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="film-upplevelse">Vilken film?</label>
+          <input type="text" id="film-upplevelse" name="film_upplevelse" placeholder="T.ex. Filmtitel (2025)" required />
+        </div>
+      </fieldset>
+
+      <!-- 05 Fri kultur -->
+      <fieldset class="cat-fieldset">
+        <legend class="category-label">
+          <span class="cat-num">05</span>
+          Fri kultur
+        </legend>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="frikultur-datum">Datum</label>
+            <input type="date" id="frikultur-datum" name="frikultur_datum" required />
+          </div>
+          <div class="form-group">
+            <label for="frikultur-plats">Plats / Lokal</label>
+            <input type="text" id="frikultur-plats" name="frikultur_plats" placeholder="T.ex. Inkonst, Malmö" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="frikultur-upplevelse">Vad upplevde du?</label>
+          <input type="text" id="frikultur-upplevelse" name="frikultur_upplevelse" placeholder="T.ex. Danssällskapet X – föreställning Y" required />
+        </div>
+      </fieldset>
+
+      <hr class="form-divider" />
+
+      <button type="submit" class="btn-primary">
+        Skicka anmälan
+      </button>
+      <p class="form-notice">
+        Dina uppgifter används enbart för att hantera din klassikertitel och skicka diplom.
+        De delas inte med tredje part.
+      </p>
+
+    </form>
+  </div>
+
+</Layout>

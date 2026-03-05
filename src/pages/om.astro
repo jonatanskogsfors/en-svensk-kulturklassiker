@@ -1,0 +1,71 @@
+---
+import Layout from '../layouts/Layout.astro';
+const base = import.meta.env.BASE_URL;
+---
+
+<Layout
+  title="Om projektet"
+  description="Bakgrunden till En svensk kulturklassiker och idén bakom projektet."
+>
+
+  <div class="page-header">
+    <div class="container">
+      <p class="section-label">Bakgrund</p>
+      <h1>Om projektet</h1>
+      <p>Idén bakom En svensk kulturklassiker.</p>
+    </div>
+  </div>
+
+  <div class="about-content">
+
+    <h2>Varför en kulturklassiker?</h2>
+    <p>
+      De flesta känner till En svensk klassiker – den idrottsliga utmaningen att på ett år
+      genomföra Vasaloppet, Vätternrundan, Vansbrosimningen och Lidingöloppet. Det är en
+      tradition som uppmuntrar till rörelse, målsättning och stolthet över att fullfölja
+      något stort.
+    </p>
+    <p>
+      En svensk kulturklassiker är grundad i samma tanke, men riktar blicken mot kulturen.
+      Sverige har ett rikt och tillgängligt kulturliv – institutioner, fria grupper, museer
+      och biografer finns i hela landet – men det är lätt att fastna i vanans makt och
+      aldrig riktigt ta del av bredden.
+    </p>
+
+    <h2>Idén</h2>
+    <p>
+      Genom att sätta upp konkreta och varierade kriterier – en föreställning på en
+      etablerad scen, en konsert med orkester eller kör, ett museibesök, en svensk film
+      på bio och en upplevelse inom det fria kulturlivet – skapas en ram som uppmuntrar
+      till att aktivt söka upp olika delar av det svenska kulturlivet.
+    </p>
+    <p>
+      Det är inte en tävling. Det finns inga poäng och ingen rankinglista. Det är ett
+      personligt åtagande och, när det är fullgjort, ett bevis på att du under ett år
+      medvetet och nyfiket tagit del av kulturen i alla dess former.
+    </p>
+
+    <h2>Diplomet</h2>
+    <p>
+      Den som fullföljer alla fem kategorier under ett kalenderår kan ansöka om ett
+      tryckt diplom. Diplomet skickas till din adress mot självkostnadspris – det vill
+      säga att du betalar för tryckning och porto, inget mer.
+    </p>
+    <p>
+      Mer information om priser och leveranstid ges i samband med att din anmälan
+      behandlas.
+    </p>
+
+    <h2>Kontakt</h2>
+    <p>
+      Har du frågor om projektet eller din ansökan? Skicka ett mejl till
+      <a href="mailto:info@kulturklassiker.se" style="color: var(--blue); border-bottom: 1px solid var(--gold);">info@kulturklassiker.se</a>.
+    </p>
+
+    <div style="display: flex; justify-content: center; margin-top: 3.5rem; padding-top: 2.5rem; border-top: 1px solid var(--border);">
+      <img src={`${base}sigill.png`} alt="En svensk kulturklassiker – sigill" width="80" height="80" />
+    </div>
+
+  </div>
+
+</Layout>
