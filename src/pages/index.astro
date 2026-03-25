@@ -9,7 +9,7 @@ const base = import.meta.env.BASE_URL;
   <section class="hero">
     <div class="hero__inner container">
       <div class="hero__badge">
-        <img src={`${base}sigill.png`} alt="En svensk kulturklassiker – sigill" width="280" height="280" />
+        <img src={`${base}logo.svg`} alt="En svensk kulturklassiker – logotyp" width="280" height="280" />
       </div>
 <h1 class="hero__title">En svensk kulturklassiker</h1>
       <div class="hero__divider"></div>
@@ -21,13 +21,13 @@ const base = import.meta.env.BASE_URL;
   <!-- INTRO -->
   <section class="section intro" id="om-klassikern">
     <div class="container">
-      <p class="section-label reveal">Vad är det?</p>
-      <h2 class="reveal">En klassiker för kulturen</h2>
+      <p class="section-label reveal">Vad är klassikern?</p>
+      <h2 class="reveal">En klassiker för svenskt kulturliv</h2>
       <p class="intro__text reveal">
-        En svensk kulturklassiker är en hederstitel för den som under ett och samma kalenderår
-        tagit del av fem olika sorters kulturupplevelser – allt från institutionsteater och
-        symfoniorkester till det fria kulturlivets mer intima uttryck. Det är ett sätt att
-        medvetet och systematiskt fördjupa sin relation till det svenska kulturlivet.
+        En svensk kulturklassiker innebär att under ett och samma kalenderår
+        uppleva fem olika sorters kulturupplevelser: scenkonst, konstmusik, museum,
+        film och fri kultur. Det är ett sätt att medvetet och systematiskt fördjupa sin relation till det svenska
+        kulturlivet.
       </p>
       <p class="intro__text reveal">
         Precis som idrottens klassiker kräver uthållighet och bredd kräver kulturklassikern
@@ -54,7 +54,7 @@ const base = import.meta.env.BASE_URL;
       <!-- Vänsterkolumn med klickbara siffror -->
       <nav class="cat-sidebar" aria-label="Hoppa till kategori">
         <button class="cat-sidebar__num" data-target="0" aria-label="Scenkonst">01</button>
-        <button class="cat-sidebar__num" data-target="1" aria-label="Musik">02</button>
+        <button class="cat-sidebar__num" data-target="1" aria-label="Konstmusik">02</button>
         <button class="cat-sidebar__num" data-target="2" aria-label="Museum">03</button>
         <button class="cat-sidebar__num" data-target="3" aria-label="Film">04</button>
         <button class="cat-sidebar__num" data-target="4" aria-label="Fri kultur">05</button>
@@ -69,8 +69,8 @@ const base = import.meta.env.BASE_URL;
             <h2 class="cat-panel__title">Scenkonst</h2>
             <div class="cat-panel__rule"></div>
             <p class="cat-panel__desc">
-              En scenföreställning på en etablerad scen – opera, musikal, balett
-              eller teater vid en institutionsteater, länsteater eller etablerad privatteater.
+              Se en scenföreställning – opera, musikal, balett eller teater – på en etablerad scen
+              så som våra institutionsteatrar eller etablerade privatteatrar.
             </p>
           </div>
           <div class="cat-panel__right cat-img">
@@ -84,11 +84,10 @@ const base = import.meta.env.BASE_URL;
         <article class="cat-panel" data-index="1">
           <div class="cat-panel__left">
             <p class="cat-panel__label">02 / 05</p>
-            <h2 class="cat-panel__title">Musik</h2>
+            <h2 class="cat-panel__title">Konstmusik</h2>
             <div class="cat-panel__rule"></div>
             <p class="cat-panel__desc">
-              En konsert med orkester och/eller kör – exempelvis en symfoniorkester,
-              ett större körverk eller annan klassisk ensemble.
+              Besök en konsert med orkester eller kör som framför en symfoni, större körverk eller liknande.
             </p>
           </div>
           <div class="cat-panel__right cat-img">
@@ -102,7 +101,7 @@ const base = import.meta.env.BASE_URL;
         <article class="cat-panel" data-index="2">
           <div class="cat-panel__left">
             <p class="cat-panel__label">03 / 05</p>
-            <h2 class="cat-panel__title">Museum</h2>
+            <h2 class="cat-panel__title">Bildkonst</h2>
             <div class="cat-panel__rule"></div>
             <p class="cat-panel__desc">
               Besök på ett större museum – konstmuseum, historiskt museum eller
@@ -123,7 +122,7 @@ const base = import.meta.env.BASE_URL;
             <h2 class="cat-panel__title">Film</h2>
             <div class="cat-panel__rule"></div>
             <p class="cat-panel__desc">
-              En svenskproducerad film sedd på biograf, från det aktuella
+              Se en svenskproducerad film på biograf, som är från det aktuella
               kalenderåret eller året dessförinnan.
             </p>
           </div>
@@ -141,7 +140,7 @@ const base = import.meta.env.BASE_URL;
             <h2 class="cat-panel__title">Fri kultur</h2>
             <div class="cat-panel__rule"></div>
             <p class="cat-panel__desc">
-              En föreställning eller liknande av en fri teatergrupp, ett danssällskap
+              Se en föreställning av en fri teatergrupp, ett danssällskap
               eller annat fristående kulturkollektiv utanför institutionerna.
             </p>
           </div>
@@ -268,8 +267,7 @@ const base = import.meta.env.BASE_URL;
           </div>
           <h3 class="step__title">Upplev</h3>
           <p class="step__text">
-            Besök en föreställning, konsert, ett museum och en biograf – en upplevelse
-            i varje kategori under kalenderåret.
+            Besök minst en kulturupplevbelse i varje kategori under under kalenderåret.
           </p>
         </div>
         <div class="step reveal reveal-delay-2">
@@ -284,8 +282,7 @@ const base = import.meta.env.BASE_URL;
           </div>
           <h3 class="step__title">Dokumentera</h3>
           <p class="step__text">
-            Notera vad du har sett och upplevt i varje kategori. En mening eller två
-            om varje upplevelse räcker.
+            Notera vad du har sett och upplevt i varje kategori med datum, plats och evenemang.
           </p>
         </div>
         <div class="step reveal reveal-delay-3">
@@ -298,7 +295,7 @@ const base = import.meta.env.BASE_URL;
           <h3 class="step__title">Ansök om diplom</h3>
           <p class="step__text">
             Fyll i anmälningsformuläret med dina upplevelser och beställ ditt
-            diplom till självkostnadspris.
+            diplom.
           </p>
         </div>
       </div>
@@ -312,21 +309,26 @@ const base = import.meta.env.BASE_URL;
       <h2 class="reveal">Ditt diplom</h2>
       <p class="reveal" style="text-align:center; color: var(--text-muted);">
         Den som fullföljer alla fem kategorier under ett kalenderår kan ansöka om
-        ett tryckt diplom till självkostnadspris – ett bevis på din kulturklassiker.
+        ett diplom. Diplomet är gratis som PDF är men kan också beställas tryckt eller inramat till självkostnadspris.
       </p>
 
       <div class="diploma-frame reveal">
         <div class="diploma-frame__seal">
-          <img src={`${base}sigill.png`} alt="Sigill" width="120" height="120" />
+          <img src={`${base}logo.svg`} alt="Sigill" width="120" height="120" />
         </div>
         <div class="diploma-frame__title">Kulturklassikern</div>
         <div class="diploma-frame__sub">har fullgjorts av</div>
         <p style="font-family: var(--font-display); font-size: 1.5rem; color: var(--blue-dark); margin-bottom: 0.25rem;">Förnamn Efternamn</p>
         <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem;">År 2026</p>
-        <p class="diploma-frame__text">
-          Diplomet är ett vackert tryckt intyg som skickas till din adress.
-          Pris och leveranstid meddelas i samband med beställning.
-        </p>
+        <table class="diploma-frame__events">
+          <tbody>
+            <tr><td class="diploma-frame__cat">Scenkonst</td><td class="diploma-frame__event">Rigoletto – Kungliga Operan, Stockholm</td><td class="diploma-frame__date">14 februari</td></tr>
+            <tr><td class="diploma-frame__cat">Konstmusik</td><td class="diploma-frame__event">Beethovens 9:a – Göteborgs Symfoniker</td><td class="diploma-frame__date">22 mars</td></tr>
+            <tr><td class="diploma-frame__cat">Bildkonst</td><td class="diploma-frame__event">Malmö Konstmuseum, Malmö</td><td class="diploma-frame__date">5 juni</td></tr>
+            <tr><td class="diploma-frame__cat">Film</td><td class="diploma-frame__event">Familjen – Filmstaden Bergakungen, Sundsvall</td><td class="diploma-frame__date">3 september</td></tr>
+            <tr><td class="diploma-frame__cat">Fri kultur</td><td class="diploma-frame__event">Teater Albatross: Rötter – Conventum, Örebro</td><td class="diploma-frame__date">18 november</td></tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </section>

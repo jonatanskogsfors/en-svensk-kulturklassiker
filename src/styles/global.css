@@ -2,10 +2,10 @@
    CUSTOM PROPERTIES
    =========================== */
 :root {
-  --blue:        #004F8C;
-  --blue-dark:   #003A6B;
-  --gold:        #C9A84C;
-  --gold-light:  #E2C47A;
+  --blue:        #007791;
+  --blue-dark:   #005f73;
+  --gold:        #E2CB00;
+  --gold-light:  #edd900;
   --white:       #FFFFFF;
   --off-white:   #F8F5F0;
   --text:        #1A1A1A;
@@ -729,6 +729,40 @@ p { max-width: 65ch; }
   color: var(--text-muted);
   max-width: 100%;
   text-align: center;
+}
+
+.diploma-frame__events {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 0.5rem;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.diploma-frame__events tr + tr {
+  border-top: 1px solid var(--border);
+}
+
+.diploma-frame__events td {
+  padding: 0.35rem 0.4rem;
+  vertical-align: middle;
+}
+
+.diploma-frame__cat {
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  color: var(--blue);
+}
+
+.diploma-frame__event {
+  color: var(--text);
+  width: 100%;
+}
+
+.diploma-frame__date {
+  color: var(--text-muted);
+  text-align: left;
 }
 
 /* ===========================
